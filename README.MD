@@ -31,10 +31,15 @@ learn how to run a container:
 ### Learning resources
 
 Docker Images: https://docs.docker.com/build/concepts/dockerfile/
+
 Run docker container: https://docs.docker.com/reference/cli/docker/container/run/
+
 Docker Volumes: https://docs.docker.com/engine/storage/volumes/
+
 Docker Bind mounts: https://docs.docker.com/engine/storage/bind-mounts/
+
 Docker Compose: https://docs.docker.com/compose/?uuid=1df968fa-da31-4005-aea9-2741a4a57b31
+
 Multi-stage builds: https://docs.docker.com/build/building/multi-stage/?uuid=1df968fa-da31-4005-aea9-2741a4a57b31
 
 Docker guides for Node.js app: https://docs.docker.com/guides/nodejs/

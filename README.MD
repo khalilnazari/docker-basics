@@ -43,3 +43,8 @@ Docker Compose: https://docs.docker.com/compose/?uuid=1df968fa-da31-4005-aea9-27
 Multi-stage builds: https://docs.docker.com/build/building/multi-stage/?uuid=1df968fa-da31-4005-aea9-2741a4a57b31
 
 Docker guides for Node.js app: https://docs.docker.com/guides/nodejs/
+
+# Docker Hub images
+
+You can easily search images using the search box.
+Docker container name is the same as image tag name.

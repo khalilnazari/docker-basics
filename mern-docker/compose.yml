@@ -1,0 +1,41 @@
+# version: '3.8'
+# WARN[0000] /Users/khalil/Desktop/Docker/docker-for-beginner/mern-docker/compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+
+services:
+  web: 
+    depends_on: 
+      - api 
+    build: ./frontend
+    ports:
+      - 5173:5173
+    environment:
+      VITE_API_URL: http://localhost:5000
+
+    # for docker watch mode
+    develop: 
+      watch: 
+        - path: ./frontend/package.json
+          action: rebuild 
+        - path: ./frontend/package-lock.json
+          action: rebuild 
+        - path: ./frontend
+          target: /app 
+          action: sync 
+  api: 
+    build: ./backend
+    ports:
+      - 5000:5000
+
+    # for docker watch mode
+    develop: 
+      watch: 
+        - path: ./backend/package.json
+          action: rebuild 
+        - path: ./backend/package-lock.json
+          action: rebuild 
+        - path: ./backend
+          target: /app 
+          action: sync
+
+volumes:
+  merndocker: # this is just a name 
